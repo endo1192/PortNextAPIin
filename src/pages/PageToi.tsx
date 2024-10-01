@@ -122,7 +122,8 @@ const Slabel = styled.label`
 
 const Sinput = styled.input`
     font-size: 30px;
-    width: 400px;
+    width: 90%;
+    height: auto;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -131,7 +132,6 @@ const Sinput = styled.input`
 
 const SUinput = styled.input`
     font-size: 30px;
-    width: 400px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -144,8 +144,8 @@ const SUinput = styled.input`
 
 const Stextarea = styled.textarea`
     font-size: 30px;
-    width: 400px;
-    height: 200px;
+    width: 90%;
+    height: auto;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;

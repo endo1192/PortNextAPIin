@@ -21,10 +21,11 @@ function Home() {
         <div className={styles.Home}>
             <Cheader />
             <br /><br /><br /><br /><br /><br />
-            <Sh2>Welcome to my Portfolio Site !</Sh2><br /><br /><br /><br /><br />
+            <h2>Welcome to my Portfolio Site !</h2><br /><br /><br /><br />
             <Slide /><br /><br />
-            <p>当サイトは遠藤史熙のポートフォリオサイトです</p>
-            <p>どうぞごゆっくり御覧ください</p><br /><br /><br /><br />
+            <Sp>当サイトは遠藤史熙の</Sp>
+            <Sp>ポートフォリオサイトです</Sp>
+            <Sp>どうぞごゆっくり御覧ください</Sp><br /><br /><br /><br />
             <h1></h1><br /><br /><br /><br /><br /><br /><br /><Shr></Shr><br /><br />
             <Pop>{'About'}</Pop><br />
             <Simg className="abo" src="/images/faceb.jpg" alt="ホーム"/><br /><br /><br />
@@ -37,7 +38,7 @@ function Home() {
             <Pop>{'Works'}</Pop><br />
             <Simg className="abo" src="/images/gakkib.jpg" alt="ホーム"/><br /><br />
             <Poptext>{'～過去の実績一覧～'}<br />{"各種制作物等"}<br /><br /><SLink href="/PageWorks">詳しくはこちら</SLink><br /><br /><br /></Poptext>
-            <Shr></Shr>
+            <Shr></Shr><br /><br />
             <Pop>{'Contact'}</Pop><br />
             <Simg className="abo" src="/images/creatorb.jpg" alt="ホーム"/><br /><br />
             <Poptext><SLink href="/PageToi">ご連絡はこちら</SLink></Poptext><br /><br /><br /><br /><br /><br />
@@ -57,8 +58,8 @@ const Shr = styled.hr`
     margin: auto;
 `;
 
-const Sh2 = styled.h2`
-    font-size: 5em;
+const Sp = styled.p`
+    font-size: 24px;
 `;
 
 const Simg = styled.img`

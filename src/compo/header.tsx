@@ -88,8 +88,12 @@ const SLink = styled(Link)`
         font-size: 2.5rem; /* 768pxから1199pxの画面幅に対してフォントサイズを設定 */
   }
 
-  @media (max-width: 768px) {
-        font-size: 1.7rem; /* 画面サイズが768px以下の場合のフォントサイズ */
+  @media (min-width: 470px) and (max-width: 768px) {
+        font-size: 1.3rem; /* 768pxから1199pxの画面幅に対してフォントサイズを設定 */
+  }
+
+  @media (max-width: 470px) {
+        font-size: 1rem; /* 画面サイズが768px以下の場合のフォントサイズ */
   }
 `;
 
@@ -98,7 +102,7 @@ const Sheader = styled.header`
   background: rgb(41, 41, 84);
   font-size: 2rem;
   font-family: 'Times New Roman', Times, serif;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   position: fixed;
   top: 0;
   left: 0;

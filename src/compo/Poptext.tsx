@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
+import styled from "styled-components";
 
 interface PopProps {
     children: React.ReactNode;
@@ -46,10 +47,16 @@ const Poptext: React.FC<PopProps> = ({children}) => {
           initial = "hidden"
           animate = {control} 
         >
-          <p>{children}</p>
+          <Sp>{children}</Sp>
         </motion.div>
     );
 
 }
+
+const Sp = styled.p`
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+`;
 
 export default Poptext;
