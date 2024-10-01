@@ -13,7 +13,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
         try {
             // Nodemailerトランスポーターを作成
-            let transporter = nodemailer.createTransport({
+            const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
                     user: process.env.EMAIL_USER,
@@ -22,7 +22,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             });
 
             // メールオプションを設定
-            let mailOptions = {
+            const mailOptions = {
                 from: process.env.EMAIL_USER,
                 to: process.env.EMAIL_RECIPIENT,
                 subject: 'New Form Submission',
