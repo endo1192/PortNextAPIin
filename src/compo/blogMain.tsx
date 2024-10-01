@@ -3,48 +3,41 @@ import styled from "styled-components";
 
 const BlogMain = ({ blocks }: { blocks: any }) => {
   return (
-    <div>
-      {/*       
-      <h1>{page.properties.title.title[0].plain_text}</h1>
-      <a href={page.url}>Notion Page Link</a>
-      */}
-      
-
-      {/* ブロックデータをループして表示 */}
-      <div>
+    
+      <Sdiv>
         {blocks.map((block: any) => {
           switch (block.type) {
             case 'paragraph':
               return (
-                <p key={block.id}>
+                <Sp key={block.id}>
                   {block.paragraph.rich_text.map((text: any, index: any) => (
                     <span key={index}>{text.plain_text}</span>
                   ))}
-                </p>
+                </Sp>
               );
               case "heading_1":
                 return (
-                  <h1 key={block.id}>
+                  <Sh1 key={block.id}>
                     {block.heading_1.rich_text.map((text: any, index: any) => (
                     <span key={index}>{text.plain_text}</span>
                     ))}
-                  </h1>
+                  </Sh1>
                 );
               case "heading_2":
                 return (
-                  <h2 key={block.id}>
+                  <Sh2 key={block.id}>
                     {block.heading_2.rich_text.map((text: any, index: any) => (
                     <span key={index}>{text.plain_text}</span>
                     ))}
-                  </h2>
+                  </Sh2>
                 );
               case "heading_3":
                 return (
-                  <h3 key={block.id}>
+                  <Sh3 key={block.id}>
                     {block.heading_3.rich_text.map((text: any, index: any) => (
                     <span key={index}>{text.plain_text}</span>
                     ))}
-                  </h3>
+                  </Sh3>
                 );
               /*case "image":
                 //const src =
@@ -73,14 +66,35 @@ const BlogMain = ({ blocks }: { blocks: any }) => {
               return <div key={block.id}>Unknown block type</div>;
           }
         })}
-      </div>
-    </div>
+      </Sdiv>
+    
   );
 };
 
 
 const Simg = styled.img`
     width: 60%;
+`;
+
+const Sdiv = styled.div`
+    padding-left: 10%;
+    padding-right: 10%;
+`;
+
+const Sp = styled.p`
+    font-size: 20px;
+`;
+
+const Sh2 = styled.h2`
+    font-size: 32px;
+`;
+
+const Sh1 = styled.h1`
+    font-size: 38px;
+`;
+
+const Sh3 = styled.h3`
+    font-size: 26px;
 `;
 
 export default BlogMain;

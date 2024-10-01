@@ -145,7 +145,7 @@ const SUinput = styled.input`
 const Stextarea = styled.textarea`
     font-size: 30px;
     width: 90%;
-    height: auto;
+    height: 200px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
