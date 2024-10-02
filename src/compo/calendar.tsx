@@ -9,7 +9,7 @@ import {CalendarAPI} from '../pages/api/CalendarAPI';
 const Calendarcon = styled.div`
   width: 85%;  
   max-width: 1200px;  
-  min-width: 350px;
+  min-width: 250px;
   margin: 0 auto;  
   padding: 20px;  
   height: auto;

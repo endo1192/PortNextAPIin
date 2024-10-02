@@ -37,7 +37,7 @@ const Snav = styled.nav`
 `;
 
 const Simg = styled.img`
-  width: 190px; /* 固定サイズに変更 */
+  width: 150px; /* 固定サイズに変更 */
   @media (max-width: 768px) {
       width: 140px; /* スマートフォン向けに縮小 */
   }
@@ -59,7 +59,7 @@ const Sul = styled.ul`
   align-items: center; /* 高さを揃える */
   height: 100%;
   justify-content: flex-start;
-  margin-right: 3rem;
+  margin-right: 2.5rem;
 `;
 
 const S2ul = styled.ul`
@@ -93,7 +93,7 @@ const SLink = styled(Link)`
   }
 
   @media (max-width: 470px) {
-        font-size: 1rem; /* 画面サイズが768px以下の場合のフォントサイズ */
+        font-size: 0.8rem; /* 画面サイズが768px以下の場合のフォントサイズ */
   }
 `;
 
@@ -110,6 +110,10 @@ const Sheader = styled.header`
   align-items: center;
   z-index: 999;
   text-decoration: none;
+  height: 70px;
+  @media (max-width: 382px) {
+        height: 45px; 
+  }
 `;
   
   export default Cheader;

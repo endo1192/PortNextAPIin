@@ -14,7 +14,7 @@ function Cfooter() {
 
   const Sfooter =styled.footer`
     width: 100%;
-    height: 50px;
+    height: 40px;
     background: rgb(95, 95, 95);
     font-size: 35px;
     font-family: 'Times New Roman', Times, serif;
@@ -24,7 +24,7 @@ function Cfooter() {
   `;
 
   const Sp = styled.p`
-    font-size: 20px;
+    font-size: 12px;
   `;
   
   export default Cfooter;
