@@ -37,7 +37,7 @@ export const getServerSideProps: GetServerSideProps<NotionDatabaseProps> = async
   try {
     const pages = await getDatabase(databaseId);
 
-    // ページ情報も取得する場合
+    
     /*const pageDetails = await Promise.all(
       pages.map(async (page: any) => {
         const detailedPage = await getPage(page.id);
@@ -55,7 +55,7 @@ export const getServerSideProps: GetServerSideProps<NotionDatabaseProps> = async
       };
     }
   
-    const id = context.params.id as string; // 型アサーションを使用してstringとして扱う
+    const id = context.params.id as string; 
     const page1 = await getPage(id);
     const blocks = await getBlocks(id);
 

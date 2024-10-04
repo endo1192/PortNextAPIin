@@ -14,7 +14,7 @@ const notion = new Client({
 export const getDatabase = async (databaseId: string): Promise<PageObjectResponse[]> => {
   try {
     const response = await notion.databases.query({ database_id: databaseId });
-    return response.results as PageObjectResponse[]; // データベースのページリストを返す
+    return response.results as PageObjectResponse[]; 
   } catch (error) {
     console.error('Error fetching Notion database:', error);
     throw error;

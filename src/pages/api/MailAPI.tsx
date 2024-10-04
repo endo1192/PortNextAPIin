@@ -12,7 +12,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         const { firstName, lastName, question }: FormData = req.body;
 
         try {
-            // Nodemailerトランスポーターを作成
+            
             const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
@@ -21,7 +21,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                 },
             });
 
-            // メールオプションを設定
+            
             const mailOptions = {
                 from: process.env.EMAIL_USER,
                 to: process.env.EMAIL_RECIPIENT,
@@ -29,11 +29,11 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
                 text: `FirstName: ${firstName}\nLastName: ${lastName}\nQuestion: ${question}`,
             };
 
-            // メールを送信
+            
             await transporter.sendMail(mailOptions);
             console.log('Email sent successfully');
 
-            // 成功レスポンスを返す
+            
             res.status(200).json({ success: true });
         } catch (error) {
             if (error instanceof Error) {
@@ -45,7 +45,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             }
         }
     } else {
-        // POST以外のメソッドに対応しない場合
+        
         res.setHeader('Allow', ['POST']);
         res.status(405).end(`Method ${req.method} Not Allowed`);
     }

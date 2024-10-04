@@ -29,6 +29,21 @@ const handleSubmit: FormEventHandler<HTMLFormElement> = async (event) => {
         question: event.currentTarget.question.value,
     };
 
+
+    
+    if (!formDataObj.firstName || !formDataObj.lastName || !formDataObj.question) {
+        alert('すべてのフィールドを入力してください');
+        return; 
+    }
+
+
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formDataObj.lastName)) {
+        alert('メールアドレスの形式が正しくありません');
+        return; 
+    }
+
     /*const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/mailform`, {
         method: 'POST',
         headers: {
