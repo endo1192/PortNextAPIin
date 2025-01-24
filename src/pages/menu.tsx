@@ -1,4 +1,5 @@
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
+
 
 
 // pages/index.tsx

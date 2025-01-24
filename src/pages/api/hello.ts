@@ -1,4 +1,5 @@
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
+
 
 
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
