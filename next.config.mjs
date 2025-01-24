@@ -4,6 +4,9 @@ const nextConfig = {
   compiler:{
     styledComponents: true,
   },
+  experimental: {
+    runtime: 'experimental-edge',
+  },
 };
 
 export default nextConfig;
