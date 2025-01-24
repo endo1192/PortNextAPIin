@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 // lib/notion.ts
 import { Client } from '@notionhq/client';
 import { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints';

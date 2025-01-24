@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 import React from 'react';
 import Pop from '../compo/pop';
 import { getPage,getBlocks } from './api/NotionAPI'

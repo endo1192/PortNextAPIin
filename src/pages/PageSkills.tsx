@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 import React from 'react';
 import styled from "styled-components";
 import Pop from '../compo/pop';

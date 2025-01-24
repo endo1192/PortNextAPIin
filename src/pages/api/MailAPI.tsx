@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 import nodemailer from 'nodemailer';
 import { NextApiRequest, NextApiResponse } from 'next';
 

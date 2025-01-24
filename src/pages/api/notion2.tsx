@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 // pages/api/notion.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getPage } from '../../lib/notion';

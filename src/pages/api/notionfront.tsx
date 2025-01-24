@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 

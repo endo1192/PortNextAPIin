@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 // pages/index.tsx
 import { GetServerSideProps } from 'next';
 import { getDatabase } from '../lib/notion';

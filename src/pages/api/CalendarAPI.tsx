@@ -1,3 +1,6 @@
+export const runtime = 'edge';
+
+
 // api/googleCalendar.ts
 const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 const CALENDAR_ID = process.env.NEXT_PUBLIC_CALENDAR_ID;
